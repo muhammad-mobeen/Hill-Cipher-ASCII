@@ -137,9 +137,6 @@ def decipher(cipher_txt):
         i+=3
 
     #Getting Key-1 (inverse) ready!
-    det_key = int(np.linalg.det(Key))%moder
-    det_inv_mod = pow(det_key, -1, moder)
-    adj_key = adjointer(Key)%moder
     key_inv = Key_Inverse()
 
     #col_vecs and key_inv collide here :)
